@@ -3,7 +3,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { PiApplePodcastsLogoLight } from "react-icons/pi";
 import { LiaVideoSolid } from "react-icons/lia";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className="sticky top-0 border-b-black border-b-[1px] bg-white">
       <div className="flex items-center justify-between text-center py-6 px-36">
@@ -51,3 +51,5 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export default Navbar;

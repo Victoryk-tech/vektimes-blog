@@ -4,7 +4,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className=" border-black border-t-[1px] py-11">
       <div className="px-36  flex items-start justify-between ">
@@ -62,3 +62,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer;
