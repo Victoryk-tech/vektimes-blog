@@ -14,6 +14,7 @@ router.get("/", getBlogs);
 //get single product
 router.get("/:id", getBlog);
 
+//put
 router.post("/", createBlog);
 
 // update a product

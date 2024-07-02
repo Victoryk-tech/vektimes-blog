@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const blog = require("./models/blogModel");
+const reg = require("./models/regModal");
 const errorMiddleware = require("./middleware/errMiddleware");
 
 const blogRoutes = require("./routes/blogRoutes");
@@ -13,6 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const FRONTEND = process.env.FRONTEND;
 const MONGO_URL = process.env.MONGO_URL;
+const MONGO_SECOND_URL = process.env.MONGO_SECOND_URL;
 
 //browsers to access this api via cors
 const grantAccess = {
@@ -39,6 +41,7 @@ mongoose
     });
   })
   .catch((err) => console.log("error"));
+
 // routes
 app.get("/", (req, res) => {
   res.send("hello node");

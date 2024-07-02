@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className=" border-black border-t-[1px] py-11">
-      <div className="px-36  flex items-start justify-between ">
+      <div className="px-2 lg:px-36  flex items-start justify-between ">
         <div className="flex flex-col items-start justify-between">
           <h1 className="text-2xl font-bold">THE VEKS TIMES</h1>
           <nav className="flex items-start justify-start space-x-3 pt-36">
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </nav>
         </div>
-        <nav className="flex flex-col space-y-3 font-bold">
+        <nav className="hidden lg:flex flex-col space-y-3 font-bold">
           <a href="#">News</a>
           <a href="#">Sport</a>
           <a href="#">Business</a>
@@ -33,7 +33,7 @@ const Footer = () => {
           <a href="#">Life & style</a>
           <a href="#">Culture</a>
         </nav>
-        <nav className="flex flex-col space-y-3">
+        <nav className="hidden md:flex flex-col space-y-3">
           <h2 className="font-bold text-lg">Subscribe</h2>
           <a href="#">Why subscribe?</a>
           <a href="#">Get subcription</a>
